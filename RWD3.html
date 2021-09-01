@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+#page {
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* header */
+#header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  padding: 10px 20px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  box-sizing: border-box;
+  box-shadow: 0 53px 10px black;
+}
+.arc-right {
+  display: none;
+}
+.arc-left li {
+  padding: 7px 10px;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.arc-left li b {
+  font-weight: 1000;
+}
+.arc-left li > a {
+  color: black;
+}
+.arc-left li:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+/* end header */
+#banner {
+  top: 50px;
+  width: 100%;
+  height: 30%;
+  position: relative;
+}
+.image {
+  height: 100%;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner-text h1 {
+  padding: 5px 20px;
+  color: white;
+  display: flex;
+  background: rgba(0, 0, 0, 0.8);
+}
+.banner-text h2 {
+  display: none;
+}
+/* end banner */
+
+#container {
+  width: 95%;
+  margin: 100px auto 0px;
+}
+#container h2 {
+  padding: 20px 11px;
+  font-size: 25px;
+  font-weight: 300;
+}
+#container .content {
+  margin: 20px auto;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border: 0.5px solid black;
+}
+img {
+  width: 100%;
+}
+.content::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  font-weight: 1000;
+}
+.content:first-of-type::before {
+  content: "Summer House";
+}
+.content:nth-of-type(2)::before {
+  content: "Brick House";
+}
+.content:nth-of-type(3)::before {
+  content: "Renovated";
+}
+.content:nth-of-type(4)::before {
+  content: "Barn House";
+}
+.content:nth-of-type(5)::before {
+  content: "Summer House";
+}
+.content:nth-of-type(6)::before {
+  content: "Brick House";
+}
+.content:nth-of-type(7)::before {
+  content: "Renovated";
+}
+.content:last-of-type::before {
+  content: "Barn House";
+}
+/* end container */
+#main {
+  width: 95%;
+  margin: 50px auto;
+}
+#main > h2 {
+  margin: 20px 11px;
+  font-size: 25px;
+  font-weight: 1000;
+}
+#main > p {
+  font-weight: 700;
+}
+.main-item {
+  margin: 10px auto;
+}
+.main-item h2 {
+  margin: 10px 0px;
+  font-weight: 2000;
+}
+.main-item h3 {
+  color: #666;
+  margin: 5px 0;
+}
+.main-item p {
+  color: black;
+  font-weight: 800;
+  margin: 5px 0;
+}
+.main-item button {
+  width: 100%;
+  border: none;
+  padding: 5px 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+.main-item button:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+/* end main */
+#contact {
+  width: 95%;
+  margin: 50px auto 0px;
+}
+#contact > h2 {
+  margin: 0px 0px 20px 0;
+}
+#contact > p {
+  margin: 20px 0px;
+  font-weight: 700;
+}
+.send input {
+  width: 100%;
+  font-size: 20px;
+  margin: 10px 0;
+  padding: 3px 0px 3px 10px;
+  box-sizing: border-box;
+}
+.send button {
+  font-size: 15px;
+  color: white;
+  padding: 7px 13px;
+  background: black;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.send button:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: black;
+}
+.image-bottom {
+  margin: 50px 0 10px 0;
+  width: 100%;
+  height: 300px;
+}
+.image-bottom img {
+  width: 100%;
+  height: 100%;
+}
+/* end contact */
+#footer {
+  width: 100%;
+  height: 70px;
+  background: black;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer p {
+  color: white;
+  font-weight: 500;
+}
+#footer a {
+  color: white;
+  text-decoration: underline;
+}
+#footer a:hover {
+  color: lime;
+}
+/* for tablet */
+@media screen and (min-width: 600px) {
+  .arc-right {
+    display: block;
+  }
+  #header {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .arc-right ul {
+    display: flex;
+  }
+  .arc-right li {
+    padding: 7px 10px;
+    font-size: 15px;
+    letter-spacing: 3px;
+  }
+  .arc-right li a {
+    color: black;
+  }
+  .arc-right li:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .arc-left li {
+    font-size: 15px;
+  }
+  /* end header */
+  .banner-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .banner-text h1 {
+    padding: 5px 15px;
+  }
+  .banner-text h2 {
+    display: block; 
+    color: white;
+    margin-left: 10px;
+    letter-spacing: 3px;
+    font-size: 35px;
+    font-weight: 300;
+  }
+  /* end banner */
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #container h2 {
+    padding: 20px 15px;
+    width: 100%;
+  }
+  #container hr {
+    width: 100%;
+  }
+  #container .content {
+    width: 48%;
+    margin: 5px auto;
+    border: none;
+  }
+  /* end container */
+  #main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #main > h2 {
+    margin: 10px 0;
+    width: 100%;
+    font-weight: 300;
+  }
+  #main hr {
+    width: 100%;
+  }
+  #main > p {
+    margin: 20px 0;
+    width: 100%;
+    font-weight: 300;
+  }
+  .main-item {
+    width: 48%;
+  }
+}
+/* for desktop */
+@media screen and (min-width: 1024px) {
+  #header {
+    height: 70px;
+  }
+  #header li {
+    font-size: 22px;
+  }
+  .banner-text {
+    font-size: 23px;
+  }
+  /* end banner */
+  #container {
+    width: 98%;
+  }
+  #container .content {
+    width: 24%;
+  }
+  #container h2 {
+    padding: 20px 8px;
+  }
+  /* end container */
+  #main {
+    width: 98%;
+  }
+  .main-item {
+    width: 24%;
+  }
+  .image-bottom {
+    height: 500px;
+    transition: height 0.5s linear;
+  }
+}
+    </style>
+</head>
+<body>
+    <div id="page">
+        <div id="header">
+            <div class="arc-left">
+                <ul>
+                    <li><a href="#"><b>BR</b> Architects</a></li>
+                </ul>
+            </div>
+            <div class="arc-right">
+                <ul>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="banner">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1054&q=80" alt="">
+            </div>
+            <div class="banner-text">
+                <h1>B R </h1>
+                <h2> Architects</h2>
+            </div>
+        </div>
+        <div id="container">
+            <h2>Projects</h2>
+            <hr>
+            <div class="content">
+                <img src="https://images.unsplash.com/photo-1598228723793-52759bba239c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="error">
+            </div>
+            <div class="content">
+                <img src="https://images.unsplash.com/photo-1598228723793-52759bba239c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="error">
+            </div>
+            <div class="content">
+                <img src="https://images.unsplash.com/photo-1598228723793-52759bba239c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="error">
+            </div>
+            <div class="content">
+                <img src="https://images.unsplash.com/photo-1598228723793-52759bba239c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="error">
+            </div>
+            <div class="content">
+                <img src="https://images.unsplash.com/photo-1598228723793-52759bba239c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="error">
+            </div>
+            <div class="content">
+                <img src="https://images.unsplash.com/photo-1598228723793-52759bba239c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="error">
+            </div>
+            <div class="content">
+                <img src="https://images.unsplash.com/photo-1598228723793-52759bba239c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="error">
+            </div>
+            <div class="content">
+                <img src="https://images.unsplash.com/photo-1598228723793-52759bba239c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="error">
+            </div>
+        </div>
+        <div id="main">
+            <h2>About</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="main-item">
+                <img src="https://images.unsplash.com/photo-1489779162738-f81aed9b0a25?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1082&q=80" alt="error">
+                <h2>John Doe</h2>
+                <h3>CEO & Founder</h3>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
+            </div>
+            <div class="main-item">
+                <img src="https://images.unsplash.com/photo-1489779162738-f81aed9b0a25?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1082&q=80" alt="error">
+                <h2>John Doe</h2>
+                <h3>Architect</h3>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
+            </div>
+            <div class="main-item">
+                <img src="https://images.unsplash.com/photo-1489779162738-f81aed9b0a25?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1082&q=80" alt="error">
+                <h2>Mike Ross</h2>
+                <h3>Architect</h3>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
+            </div>
+            <div class="main-item">
+                <img src="https://images.unsplash.com/photo-1489779162738-f81aed9b0a25?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1082&q=80" alt="error">
+                <h2>Dan Star</h2>
+                <h3>Architect</h3>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
+            </div>
+        </div>
+        <div id="contact">
+            <h2>Contact</h2>
+            <hr>
+            <p>Lets get in touch and talk about your next project.</p>
+            <div class="send">
+                <form action="#" method="GET">
+                    <input name="name" type="text" placeholder="Name"></input>
+                    <input name="mail" type="text" placeholder="Email"></input>
+                    <input name="sub" type="text" placeholder="Subject"></input>
+                    <input name="comment" type="text" placeholder="Comment"></input>
+                    <button>SEND MESSAGE</button>
+                </form>
+            </div>
+            <div class="image-bottom">
+                <img src="https://images.unsplash.com/photo-1510846606678-710c05a5c776?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80
+                " alt="">
+            </div>
+        </div>
+        <div id="footer">
+            <p>Powered by <a href="#">w3.css</a></p>
+        </div>
+    </div>
+</body>
+</html>
