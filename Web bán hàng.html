@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web bán hàng</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+     <!-- thanh nav -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top">
+        <a class="navbar-brand" href="#">
+            <a class="nav-link text-white" href="#">
+                <img style="width: 50px; height: 50px; margin-left: -30px;" src="https://scontent.fhan3-2.fna.fbcdn.net/v/t1.6435-9/67176114_564227394109792_814159730116132864_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=6Bz5j58HDe0AX8cu-hC&_nc_ht=scontent.fhan3-2.fna&oh=2d5c8467ce9b9a763dbf0b27da458c94&oe=6177E075"
+                    class="rounded-circle">
+                <span class="border border-warning p-2">Chè thạch quán</span>
+            </a>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <!-- mt-lg-0 -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-white text-uppercase" href="http://127.0.0.1:5500/INDEX_AGAIN.html">
+                        Trang Chủ
+                        <!-- <span class="sr-only">(current)</span> -->
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white text-uppercase" href="#" id="navbarDropdown"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        MENU
+                    </a>
+                    <div class="dropdown-menu bg-info" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item " href="https://vn.lovepik.com/image-401538105/summer-mango-smoothie.html">Sinh tố trái cây</a>
+                        <a class="dropdown-item " href="https://www.foody.vn">Đồ ăn nhanh</a>
+                        <a class="dropdown-item " href="https://shopeefood.vn/ha-noi/tra-sua-cha-cha">Trà sữa</a>
+                        <a class="dropdown-item " href="https://shopeefood.vn/ha-noi/trang-juice-sinh-to-nuoc-ep">Nước ép</a>
+                        <a class="dropdown-item " href="https://www.foody.vn/ha-noi/tropic-tea-tra-chanh-tra-sua">Trà chanh- trà hoa quả</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item " href="https://www.foody.vn/ha-noi/ngoc-thach-quan-sua-chua-caramen-luong-dinh-cua">Các loại chè</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled text-white text-uppercase" href="#">
+                        Giới thiệu
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled text-white text-uppercase" href="#">
+                        Blog
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled text-white text-uppercase" href="http://127.0.0.1:5500/INDEX_Contact.html">
+                        Liên hệ
+                    </a>
+                </li>
+              
+            </ul>
+
+        </div>
+    </nav>
+    <!-- carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="https://owa.bestprice.vn/images/articles/uploads/dan-ban-dia-mach-12-quan-che-ngon-o-da-nang-an-hoai-khong-chan-5f5198717f596.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="http://streaming1.danviet.vn/upload/4-2018/images/2018-10-21/che-be-de-1540127224-width680height500.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+
+                <img class="d-block w-100" src="https://xukachan.com/wp-content/uploads/2019/03/cac-mon-che-ngon.jpg" alt="Third slide">
+
+            </div>
+            <div class="carousel-item">
+
+                <img class="d-block w-100" src="https://i.pinimg.com/736x/d0/25/7d/d0257d1636f6456f04d5da0d963f653e.jpg" alt="Third slide">
+
+            </div>
+            <div class="carousel-item">
+
+                <img class="d-block w-100" src="https://tcvn.gov.vn/wp-content/uploads/2019/08/tr%C3%A0-s%E1%BB%AFa.jpg" alt="Third slide">
+
+            
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="container ">
+        <div class="row text-center m-auto">
+            <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <!-- card image caps -->
+                <div class="card text-white bg-info mb-3" style="margin-top: 50px;">
+                    <div class="card-header">Hàng rào Đồ ăn</div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Những ai xa quê hương yêu dấu nhưng vẫn muốn thưởng thức những sản phẩm đò ăn nơi mình
+                            sinh ra mà không phải vất vả chọn lựa các loại mặt hàng trái cây thì hãy đến với chúng tôi
+                            không chỉ giới thiệu mà còn sẵn sàng giao hàng giá sỉ đến tận nơi cho bạn.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <!-- card image caps -->
+                <div class="card text-white bg-info mb-3" style=" margin-top: 50px;">
+                    <div class="card-header">Kiến Thức Đồ ăn</div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Hiện nay mỗi người tiêu dùng đều muốn lựa chọn những loại đồ ăn vừa tốt cho sức khỏe
+                            nhưng vẫn phải đảm bảo không sử dụng chất bảo quản và không cần phải đi xa. Với mục tiêu của
+                            chúng tôi cung cấp những sản phẩm đò ăn chất lượng giá sỉ hợp lý nhất.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <!-- card image caps -->
+                <div class="card text-white bg-info mb-3" style="margin-top: 50px;">
+                    <div class="card-header">Dịch vụ Đồ ăn giá sỉ giao tận nơi</div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Chúng tôi chuyên bỏ mối các loại Đồ ăn tươi ngon sạch, đảm bảo vệ sinh
+                            và chất lượng với giá sỉ tại TP. Hà Nội. Chỉ cần với một cuộc điện thoại bạn sẽ có ngay
+                            những loại Đồ ăn miền Nam giá sỉ giao tận nơi và đặc biệt được miễn phí ship trên toàn
+                            Thành Phố Hà Nội.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- SẢN PHẨM NỔI BẬT Card img -->
+    <section>
+        <div class="container">
+            <hr class="border-primary">
+            <div class="row welcome text-center">
+                <div class="col-12 my-3">
+                    <h5 class="text-primary">Sản Phẩm Nổi Bật</h5>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <img class="card-img-top border border-primary" src="https://cdn.tgdd.vn/2020/10/CookProduct/che-sau-rieng-da-nang-thumbnail-1200x676.jpg" alt="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Chè sầu liên</h5>
+                        <p class="card-text">30,000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <img class="card-img-top border border-primary" src="https://higlum.com/wp-content/uploads/2020/08/cach-lam-che-dua-dam.jpg" alt="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Chè dừa dầm</h5>
+                        <p class="card-text">20,000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <img class="card-img-top border border-primary" src="https://toplist.vn/images/800px/thach-ngoc-quan-ha-tinh-463798.jpg" alt="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Sữa chua nếp cẩm</h5>
+                        <p class="card-text">24,000 VNĐ</p>
+                    </div>
+                </div>
+                <!-- Row Two -->
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <img class="card-img-top border border-primary" src="https://images.foody.vn/res/g64/634857/prof/s640x400/foody-mobile-che-ko-jpg-289-636231960690121856.jpg" alt="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Chè thập cẩm</h5>
+                        <p class="card-text">20,000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <img style="height: 30vh;" class="card-img-top border border-primary" src="https://images.foody.vn/res/g109/1083514/prof/s640x400/foody-upload-api-foody-mobile-da-d770201f-210622152657.jpeg" alt="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Tàu hũ trân trâu đường đen</h5>
+                        <p class="card-text">25,000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <img class="card-img-top border border-primary" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVpDzLDYTEtKDE9HlzSOTeDYtUDpqlg5jgog&usqp=CAU" alt="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Sữa chua mít</h5>
+                        <p class="card-text">20,000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <img class="card-img-top border border-primary" src="https://images.foody.vn/res/g104/1030120/prof/s640x400/foody-upload-api-foody-mobile-foody-upload-api-foo-200616164814.jpg" alt="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Trà chanh</h5>
+                        <p class="card-text">40,000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <img class="card-img-top border border-primary" src="https://media.cooky.vn/recipe/g4/36472/s800x500/cooky-recipe-cover-r36472.JPG" alt="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Sinh tố bơ</h5>
+                        <p class="card-text">25,000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <img class="card-img-top border border-primary" src="https://kenh14cdn.com/2019/11/5/t-15729718041531163741916.jpg" alt="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Trà sữa trân trâu đường đen</h5>
+                        <p class="card-text">25,000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <img class="card-img-top border border-primary" src="https://hocphache.com.vn/wp-content/uploads/2017/12/hinh-tra-sua-vi-dau.jpg" alt="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Trà sữa dâu</h5>
+                        <p class="card-text">22,000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <img class="card-img-top border border-primary" src="https://abby.vn/wp-content/uploads/2017/06/tr%C3%A0-s%E1%BB%AFa-6.jpg" alt="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Trà sữa Socola</h5>
+                        <p class="card-text">24,000 VNĐ</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <img class="card-img-top border border-primary" src="https://images.foody.vn/res/g105/1045692/prof/s640x400/foody-upload-api-foody-mobile-foody-upload-api-foo-200907155055.jpg" alt="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">gà rán</h5>
+                        <p class="card-text">20,000 VNĐ/chiếc</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- TIN TỨC -->
+
+    <div class="container">
+        <hr class="border-primary">
+        <div class="row text-center">
+            <div class="col-12">
+                <h5 class="text-danger p-3">Tin Tức</h5>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img class="card-img-top border border-danger" src="https://afamilycdn.com/150157425591193600/2021/4/6/giphy-16176988652671308135806-81-0-381-480-crop-1617698884719961120145.gif" alt="">
+                <div class="card-body">
+                    <p>Bài viết mẫu 1</p>
+                    <hr class="border-danger w-50">
+                    <p>Đây là trang blog của cửa hàng. Bạn có thể dùng blog để quảng bá sản phẩm mới,
+                        chia sẻ...</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <img class="card-img-top border border-danger" src="https://vtv1.mediacdn.vn/thumb_w/650/2019/5/20/nuoc-ep-trai-cay-1558356498998204270107.jpg" alt="">
+                <div class="card-body">
+                    <p>Bài viết mẫu 2</p>
+                    <hr class="border-danger w-50">
+                    <p>Đây là trang blog của cửa hàng. Bạn có thể dùng blog để quảng bá sản phẩm mới,
+                        chia sẻ...</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <img class="card-img-top border border-danger" src="data:image/jpeg;base64,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" alt="">
+                <div class="card-body ">
+                    <p>Bài viết mẫu 3</p>
+                    <hr class="border-danger w-50">
+                    <p>Đây là trang blog của cửa hàng. Bạn có thể dùng blog để quảng bá sản phẩm mới,
+                        chia sẻ...</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <hr class="border-primary">
+        <div class="row text-center my-5">
+            <div class="col-lg-8 col-md-12 col-sm-12">
+                <h5>ĐĂNG KÝ NHẬN THÔNG TIN KHUYẾN MÃI
+
+                    </5>
+                    <p class="card-text font-weight-normal mt-2">Để theo dõi những sản phẩm được giảm
+                        giá của chúng tôi</p>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <nav class="navbar">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Nhập địa chỉ email"
+                            aria-label="Search">
+                        <button class="btn btn btn-outline-primary my-4 my-sm-0" type="submit">
+                            Đăng Ký
+                        </button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-info">
+        <div class="container">
+            <div class="row text-center p-3">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h6 class="text-white">HỖ TRỢ KHÁCH HÀNG</h6>
+                    <p>Chính sách giao hàng</p>
+                    <p>Chính sách đổi trả</p>
+                    <p>Chính sách bảo mật</p>
+                    <p>Điều khoản dịch vụ</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h6 class="text-white">HỆ THỐNG CỬA HÀNG</h6>
+                    <p>Thời gian hoạt động:Từ thứ 2 đến Chủ Nhật</p>
+                    <p>Thời gian hoạt động: từ 7h sáng đến 22h30 tối</p>
+                    <p>Địa chỉ: 18B Ngô Quyền, thị trấn An Lão, Hải Phòng</p>
+                    <p>hotline:  0363300489 -  0867841988</p>      
+                </div>
+            </div>
+        </div>
+    </footer>
+<div style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"><img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div><script>function getCookie(t){for(var e=t+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(e))return i.substring(e.length,i.length)}return""}getCookie("hostinger")&&(document.cookie="hostinger=;expires=Thu, 01 Jan 1970 00:00:01 GMT;",location.reload());var wordpressAdminBody=document.getElementsByClassName("wp-admin")[0],notification=document.getElementsByClassName("notice notice-success is-dismissible"),hostingerLogo=document.getElementsByClassName("hlogo"),mainContent=document.getElementsByClassName("notice_content")[0];if(null!=wordpressAdminBody&&notification.length>0&&null!=mainContent){var googleFont=document.createElement("link");googleFontHref=document.createAttribute("href"),googleFontRel=document.createAttribute("rel"),googleFontHref.value="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700",googleFontRel.value="stylesheet",googleFont.setAttributeNode(googleFontHref),googleFont.setAttributeNode(googleFontRel);var css="@media only screen and (max-width: 576px) {#main_content {max-width: 320px !important;} #main_content h1 {font-size: 30px !important;} #main_content h2 {font-size: 40px !important; margin: 20px 0 !important;} #main_content p {font-size: 14px !important;} #main_content .content-wrapper {text-align: center !important;}} @media only screen and (max-width: 781px) {#main_content {margin: auto; justify-content: center; max-width: 445px;}} @media only screen and (max-width: 1325px) {.web-hosting-90-off-image-wrapper {position: absolute; max-width: 95% !important;} .notice_content {justify-content: center;} .web-hosting-90-off-image {opacity: 0.3;}} @media only screen and (min-width: 769px) {.notice_content {justify-content: space-between;} #main_content {margin-left: 5%; max-width: 445px;} .web-hosting-90-off-image-wrapper {position: absolute; display: flex; justify-content: center; width: 100%; }} .web-hosting-90-off-image {max-width: 90%;} .content-wrapper {min-height: 454px; display: flex; flex-direction: column; justify-content: center; z-index: 5} .notice_content {display: flex; align-items: center;} * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} .upgrade_button_red_sale{box-shadow: 0 2px 4px 0 rgba(255, 69, 70, 0.2); max-width: 350px; border: 0; border-radius: 3px; background-color: #ff4546 !important; padding: 15px 55px !important; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 600; color: #ffffff;} .upgrade_button_red_sale:hover{color: #ffffff !important; background: #d10303 !important;}",style=document.createElement("style"),sheet=window.document.styleSheets[0];style.styleSheet?style.styleSheet.cssText=css:style.appendChild(document.createTextNode(css)),document.getElementsByTagName("head")[0].appendChild(style),document.getElementsByTagName("head")[0].appendChild(googleFont);var button=document.getElementsByClassName("upgrade_button_red")[0],link=button.parentElement;link.setAttribute("href","https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&utm_medium=panel&utm_campaign=000-wp"),link.innerHTML='<button class="upgrade_button_red_sale">Go for it</button>',(notification=notification[0]).setAttribute("style","padding-bottom: 0; padding-top: 5px; background-color: #040713; background-size: cover; background-repeat: no-repeat; color: #ffffff; border-left-color: #040713;"),notification.className="notice notice-error is-dismissible";var mainContentHolder=document.getElementById("main_content");mainContentHolder.setAttribute("style","padding: 0;"),hostingerLogo[0].remove();var h1Tag=notification.getElementsByTagName("H1")[0];h1Tag.className="000-h1",h1Tag.innerHTML="Black Friday Prices",h1Tag.setAttribute("style",'color: white; font-family: "Roboto", sans-serif; font-size: 22px; font-weight: 700; text-transform: uppercase;');var h2Tag=document.createElement("H2");h2Tag.innerHTML="Get 90% Off!",h2Tag.setAttribute("style",'color: white; margin: 10px 0 15px 0; font-family: "Roboto", sans-serif; font-size: 60px; font-weight: 700; line-height: 1;'),h1Tag.parentNode.insertBefore(h2Tag,h1Tag.nextSibling);var paragraph=notification.getElementsByTagName("p")[0];paragraph.innerHTML="Get Web Hosting for $0.99/month + SSL Certificate for FREE!",paragraph.setAttribute("style",'font-family: "Roboto", sans-serif; font-size: 16px; font-weight: 700; margin-bottom: 15px;');var list=notification.getElementsByTagName("UL")[0];list.remove();var org_html=mainContent.innerHTML,new_html='<div class="content-wrapper">'+mainContent.innerHTML+'</div><div class="web-hosting-90-off-image-wrapper"><img class="web-hosting-90-off-image" src="https://cdn.000webhost.com/000webhost/promotions/bf-2020-wp-inject-img.png"></div>';mainContent.innerHTML=new_html;var saleImage=mainContent.getElementsByClassName("web-hosting-90-off-image")[0]}</script></body>
+
+</html>
